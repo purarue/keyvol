@@ -2,7 +2,6 @@ package main
 
 import (
   "fmt"
-  "strings"
   "os/exec"
   term "github.com/nsf/termbox-go"
 )
@@ -43,17 +42,6 @@ func volumeMuteFunc() {
   runCommand("pactl", args)
 }
 
-func printHelp() {
-  fmt.Println(`Instructions:
--------------
-* Esc/Ctrl+C/q to exit.
-* Up/k to increase volume
-* Down/j to decrease volume
-* m to toggle mute
-
-`)
-}
-
 func isMuted() bool {
   args := []string{"--get-mute"}
   out, _ := exec.Command("pamixer", args...).Output()
@@ -65,10 +53,21 @@ func printVolume() {
   if !isMuted() {
     vol_args := []string{"--get-volume"}
     vol_out, _ := exec.Command("pamixer", vol_args...).Output()
-    fmt.Printf("Volume: %s\n", strings.Trim(string(vol_out), "\n"))
+    fmt.Printf("Volume: %s", string(vol_out))
   } else {
     fmt.Println("Volume: (Muted)")
   }
+}
+
+func printHelp() {
+  fmt.Println(`Instructions:
+-------------
+* Esc/Ctrl+C/q to exit.
+* Up/k to increase volume
+* Down/j to decrease volume
+* m to toggle mute
+
+`)
 }
 
 func redraw_screen() {
