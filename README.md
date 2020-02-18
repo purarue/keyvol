@@ -1,6 +1,6 @@
 # keyvol
 
-An interactive interface for `pamixer`/`pactl` to control system volume.
+An interactive terminal interface for `pamixer`/`pactl` to control system volume.
 
 Run: `keyvol`
 
