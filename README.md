@@ -13,7 +13,7 @@ Instructions:
 * m to toggle mute
 ```
 
-This could be repurposed to wrap another command 
+This could be repurposed to wrap another command by changing the command/args [here](https://github.com/seanbreckenridge/keyvol/blob/master/keyvol.go#L28-L72).
 
 #### Install
 
