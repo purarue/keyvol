@@ -20,6 +20,5 @@ This could be repurposed to wrap another command by changing the command/args [h
 Dependencies: `go`, `pamixer`, `pactl`
 
 ```
-make deps
-make
+go get -v -u "github.com/seanbreckenridge/keyvol"
 ```
