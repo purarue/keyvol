@@ -2,6 +2,8 @@
 
 An interactive terminal interface for `pamixer`/`pactl` to control system volume.
 
+<img src="https://raw.githubusercontent.com/seanbreckenridge/keyvol/master/.github/demo.gif" alt="keyvol demo gif">
+
 Run: `keyvol`
 
 ```
