@@ -1,6 +1,6 @@
 # keyvol
 
-An interactive terminal interface for `pamixer`/`pactl` to control system volume.
+An interactive terminal interface for pulseaudio (using `pamixer`/`pactl`) to control system volume.
 
 <img src="https://raw.githubusercontent.com/seanbreckenridge/keyvol/master/.github/demo.gif" alt="keyvol demo gif">
 
@@ -19,7 +19,7 @@ This could be repurposed to wrap another command by changing the command/args [h
 
 #### Install
 
-Dependencies: `go`, `pamixer`, `pactl`
+Dependencies: `go`, `pulseaudio` (`pactl`), `pamixer`
 
 ```
 go get -v -u "github.com/seanbreckenridge/keyvol"
