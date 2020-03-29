@@ -49,12 +49,12 @@ func isMuted() bool {
 
 // print the current volume (or muted, if its muted)
 func printVolume() {
-	if !isMuted() {
+	if isMuted() {
+		fmt.Println("Volume: (Muted)")
+	} else {
 		vol_args := []string{"--get-volume"}
 		vol_out, _ := exec.Command("pamixer", vol_args...).Output()
 		fmt.Printf("Volume: %s", string(vol_out))
-	} else {
-		fmt.Println("Volume: (Muted)")
 	}
 }
 
