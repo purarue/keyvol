@@ -22,5 +22,5 @@ This could be repurposed to wrap another command by changing the command/args [h
 Dependencies: `go`, `pulseaudio` (`pactl`), `pamixer`
 
 ```
-go get -v -u "github.com/seanbreckenridge/keyvol"
+go get -v -u "gitlab.com/seanbreckenridge/keyvol"
 ```
