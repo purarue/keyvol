@@ -2,8 +2,9 @@ package main
 
 import (
 	"fmt"
-	term "github.com/nsf/termbox-go"
 	"os/exec"
+
+	term "github.com/nsf/termbox-go"
 )
 
 // Actions
@@ -49,6 +50,7 @@ func isMuted() bool {
 
 // print the current volume (or muted, if its muted)
 func printVolume() {
+	fmt.Println()
 	if isMuted() {
 		fmt.Println("Volume: (Muted)")
 	} else {
@@ -64,9 +66,7 @@ func printHelp() {
 * Esc/Ctrl+C/q to exit.
 * Up/k to increase volume
 * Down/j to decrease volume
-* m to toggle mute
-
-`)
+* m to toggle mute`)
 }
 
 func redraw_screen() {
