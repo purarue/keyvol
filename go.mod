@@ -1,4 +1,4 @@
-module github.com/seanbreckenridge/keyvol
+module github.com/purarue/keyvol
 
 go 1.17
 
